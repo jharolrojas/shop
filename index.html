@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=q, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="StyleSheet" href="css/layout.css" type="text/css">
     <link rel="StyleSheet" href="css/custom.css" type="text/css">
     <link rel="StyleSheet" href="css/styleproduct.css" type="text/css">
     <script src="https://kit.fontawesome.com/c96595c366.js" crossorigin="anonymous"></script>
-
+</head>
 <body>
-    <div class="container general-flex">
+    <div class="container-g general-flex">
         <div class="containerMain general-flex">
            <div class="containerImg col-6_">
             <img src="img/logo_academlo.png" alt="logo">
@@ -24,33 +26,48 @@
         <div class="containerHeroImage general-flex">
             <img src="img/logogrande.jpeg" alt="logo">
         </div>
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>`
         <div class="containerFilter general-flex">
-            <div class="containertitleh2 col-6">
-            <h3>Todos nuestros productos</h3>
-        </div>
-        <div class="containerselect col-6 ">
-            <select name="select">
-                <option value="value1">Value 1</option>
-                <option value="value2" selected>Value 2</option>
-                <option value="value3">Value 3</option>
-              </select>
-        </div>
-        </div>
-        <div  id="containerShopProduct" class="containerShopProduct general-flex">
-        
-        </div>
-        </div>
-        </div>
-        <div id="hide" class="containerAside">
-            <aside >
-            <div id="carShopping"></div>
-            <div class="sumPrice" id="sumPrice">
-                
+                <div class="containertitleh2 col-6">
+                <h3>Todos nuestros productos</h3>
+                </div>
+                <div class="containerselect col-6 ">
+                <select name="select">
+                    <option value="value1">Value 1</option>
+                    <option value="value2" selected>Value 2</option>
+                    <option value="value3">Value 3</option>
+                </select>
             </div>
-            </aside>
         </div>
+
+        <div  id="containerShopProduct" class="containerShopProduct general-flex"></div>
+        </div>
+        </div>
+         <div id="hide" class="containerAside">
+        <aside >
+            <div id="carShopping"></div>
+            <div class="sumPrice" id="sumPrice"></div>
+        </aside>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
 <script src="js/custom.js"></script>
-<script src="js/carShopping.js"></script>       
+<script src="js/carShopping.js"></script> 
 </body>
 </html>

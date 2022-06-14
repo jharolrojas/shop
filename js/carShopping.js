@@ -84,10 +84,8 @@ function generadorHtmlShoppingCar(dataShopingCar) {
             <h3 >$${dataShopingCar[i].price}</h3>
         </div>    
     </div>
-    <div class="button">
-    <button onclick="remuve(${dataShopingCar[i].id})" type="submit" >delete</button>
-</div>
     `
+    sumPrice(dataShopingCar);
     }
     // generatorProducts(dataShopingCar)
     const container = document.getElementById('carShopping');
@@ -100,10 +98,18 @@ function sumPrice(dataShopingCar) {
         price +=dataShopingCar[i].price;
         
     }
-    let html = `<h4>Precio Total : <b>$${price}</b></h4>`
+    let html = `<h4>Precio Total : <b>$${price}</b></h4>
+    `
+    let x = `        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>`
+      
+      
     let container = document.getElementById('sumPrice');
-    container.innerHTML = html;
+    container.innerHTML = html +x;
 }
+
 
 function remuve(id) {
     localStorage.removeItem(id);

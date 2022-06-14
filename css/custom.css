@@ -11,7 +11,7 @@ body{
 }
 
 /* container general abarca todo el contenido dentro del body */
-.container{
+.container-g{
     flex-direction: column;  
 }
 
