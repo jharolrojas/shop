@@ -1,10 +1,22 @@
 "use strict"
-const data = [
-  {id : "1",name :"sudadera", brand : "adiddas", price : 54},
-  {id : "2",name :"camisa", brand : "adiddas", price : 55},
-  {id : "3",name :"pantalon", brand : "adiddas", price : 54},  
-  {id : "4",name :"calsetines", brand : "adiddas", price : 58}  
-];
+let data = [
+    {id: "1", name: "Sudadera Caqui - Academlo", img: "img/buzo-caqui.png", price: 25},
+    {id: "2", name: "Sudadera Gris - Academlo", img: "img/buzo-gris.png", price: 25 },
+    {id: "3", name: "Saco lana - cafe con negro", img: "img/buzo-cafe-con-negro.png", price: 35.00},
+    {id: "4", name: "Saco lana - gris con negro", img: "img/buzo-gris-con-blaco-adelante.png", price: 35.00},
+    {id: "5", name: "Saco a rayas - rojo y blanco", img: "img/buzo-rojo-adelante.png", price: 30.00},
+    {id: "6", name: "Saco a rayas - rosa y blanco", img: "img/buzo-azul-adelante.png", price: 30.00 },
+    {id: "7", name: "Sudadera los Angeles - Azul", img: "img/buzo-azul-los-angeles.png", price: 25},
+    {id: "8", name: "Sudadera los Angeles - Cafe", img: "img/buzo-cafe-los-angeles.png",price: 25},
+    {id: "9", name: "Sudadera decoración dinosaurio", img: "img/buzo-tierno-verde.png", price: 40.00},
+    {id: "10", name: "Sudadera decoración dinosaurio", img: "img/buzo-tierno.png", price: 40.00},
+    {id: "11", name: "Camiseta Amarrilla - Árbol Decoración", img: "img/camisa-amarilla.png", price: 22.00},
+    {id: "12", name: "Camiseta Azul - Decoración Cerveza", img: "img/camisa-azul-cerveza.png", price: 26.00},
+    {id: "13", name: "Camisera verde - Decoración Radio", img: "img/camisa-azul-clara.png", price: 23.00},
+    {id: "16", name: "Camiseta roja - Decoración Radio", img: "img/camisa-roja.png",price: 23.00},
+    {id: "17", name: "Camiseta Rosa - Decoración Rayas",img: "img/camisa-rosa.png",price: 27.00}];
+
+
 let dataShopingCar = JSON.parse(localStorage.getItem('products')) || [];
 
 function generatorProducts (array) {
@@ -13,7 +25,7 @@ function generatorProducts (array) {
         html += `
                 <div class="card-producto"  id="card-producto">
                 <div class="img-producto">
-                    <img src="img/buzo-azul-adelante.png" alt="...">
+                    <img src="${array[i].img}" alt="...">
                 </div>
                 <div class="info-producto-card">
                     <h3 class="card-title">${array[i].name}</h3>
@@ -86,19 +98,44 @@ function sumPrice(dataShopingCar) {
     }
     let html = `<h4>Precio Total : <b>$${price}</b></h4>
     `
-    let x = `        <!-- Button trigger modal -->
+    let button = `        <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
       </button>`
       
       
     let container = document.getElementById('sumPrice');
-    container.innerHTML = html +x;
+    container.innerHTML = html + button;
+    function allPrice(price) {
+        let html = `   <div class="re-com">
+        <h4 class="mb-4">Resumen del Pedido</h4>
+        <div class="info-re-com">
+            <h5>Subtotal:</h5>
+            <h5>$${price}</h5>
+        </div>
+        <div class="info-re-com">
+            <h5>Envío:</h5>
+            <h5>$${price*0.03}</h5>
+        </div>
+        <div class="info-re-com">
+            <h5>Total:</h5>
+            <h5>$${price*0.03 + price}</h5>
+        </div>
+       </div`;
+       const container = document.getElementById('resumenCompra');
+       container.innerHTML = html;   
+       }
+       allPrice(price)
+    
 }
 
 
+
+
+
 function remuve(id) {
-    localStorage.removeItem(id);
+    localStorage.clear();
+   location.reload();
 }
 
 
