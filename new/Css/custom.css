@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.general-flex{
+    width: 100%;
+    display: flex;
+}
+
+/* container general abarca todo el contenido dentro del body */
+.direction-colum{
+    flex-direction: column;  
+}
+
+/* contiene el icono del carrito y el logo de academlo ubicado en la parte superior  */
+.containerMain{
+    background-color: #F6F3F3;
+}
+.containerMain img{
+    width: 100px;
+}
+.containerImg{
+    margin-top: 2.5px;
+}
+.containerIcono{
+    display: flex;
+   justify-content: flex-end;
+}
+
+/* ccontiene la imagen grande del logo de academlo con un color de fondo */
+.containerHeroImage{
+    height: auto;
+    width: 100%;
+    background-color: #EB4A5A;
+}
+.containerHeroImage div{
+    width: 20%;
+    margin: 0rem auto;
+}
+.containerHeroImage div img{
+    width: 100%;
+}
+.containertitleh2{
+    color: #434343;
+
+}
+.containerselect{
+    display: flex;
+   justify-content: flex-end;
+}
+.containerselect select{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid aliceblue;
+    color: grey;
+}
+/* contiene las opciones para filtrar los productos  */
+/* .containerFilter{} */
+/* contiene todos los productos que se muestran en el home */
+.containerShopProduct{
+    flex-wrap: wrap;
+    justify-content: center;
+}

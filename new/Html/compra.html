@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/styleproduct.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Button trigger modal -->
+    <div class="button-compra">
+        <button type="button" class="btn colorbutton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Comprar
+          </button>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" id="width-100p">
+      <div class="modal-content" id="width-100p">
+        <div class="modal-header colorbutton">
+          <h5 class="modal-title" id="exampleModalLabel">Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Aqui van los estilos de compras -->
+            <!-- La lista de productos -->
+            <div class="accordion accordion-border-color form-compra" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4>Resumen de Productos</h4>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Aqui va el formulario -->
+            <h4 class="mt-4 ml-5 mb-3 container form-compra">Datos de contacto</h4>
+
+            <form action="" class="container form-compra">
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+            </form>
+
+
+            <h4 class="mt-4 ml-5 mb-3 container form-compra">Dirección de envio</h4>
+            <form action="" class="container form-compra">
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Dirección de envio</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-3">
+                        <label for="exampleInputPassword1" class="form-label">Número interior</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="exampleInputPassword1" class="form-label">Número exterior</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="exampleInputPassword1" class="form-label">CP</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="exampleInputPassword1" class="form-label">País</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+            </form>
+
+            <div class="resumen-compra">
+                <div class="re-com">
+                    <h4 class="mb-4">Resumen del Pedido</h4>
+                    <div class="info-re-com">
+                        <h5>Subtotal:</h5>
+                        <h5>$265.00</h5>
+                    </div>
+                    <div class="info-re-com">
+                        <h5>Envío:</h5>
+                        <h5>$99.00</h5>
+                    </div>
+                    <div class="info-re-com">
+                        <h5>Total:</h5>
+                        <h5>$364.00</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-compra">
+                <div class="buttons-compra">
+                    <button type="button" class="btn colorbutton">Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
