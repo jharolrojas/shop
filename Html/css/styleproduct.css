@@ -1,0 +1,196 @@
+.width-100{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0rem auto;
+}
+.width-80p{
+    width: 90%;
+    margin: 0rem auto;
+}
+.caja-conte{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.volver-product{
+    display: flex;
+}
+.volver-product i{
+    margin: auto 1rem;
+}
+.volver-product p{
+    margin: auto 0.5rem;
+}
+.contec-img-peque{
+    border: solid gray 2px;
+    margin-left: 1rem;
+}
+.img-peque{
+    width: 100%;
+    margin: 0.5rem auto;
+}
+.tallas button{
+    margin: 0rem 1rem 1rem 0rem;
+    padding: 0.5rem;
+    border: solid 1px black;
+    background-color: white;
+}
+.guia-tallas{
+    display: flex;
+    width: 97%;
+    justify-content: end;
+}
+.guia-tallas i{
+    margin: auto 1rem;
+}
+.guia-tallas p{
+    margin: 0.5rem 0.5rem;
+}
+.content-añadir-carrito{
+    margin: 2rem auto;
+    display: flex;
+}
+.añadir-carrito{
+    margin: 0rem auto;
+    width: 50%;
+    padding: 0.7rem 0rem;
+    border: none;
+    background-color: #eb4a5a;
+    color: white;
+}
+.fondo-rosa{
+    width: 90%;
+    background-color: white;
+    margin: 0rem auto;
+    background-image: url(../imagenes/fondo-rosado2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-recomendados{
+    display: flex;
+}
+.card-producto{
+    background-color: white;
+    width: 15rem;
+    margin-right: 2rem;
+}
+.title-productos-ralacionados{
+    padding-bottom: 1rem;
+}
+.img-producto{
+    width: 90%;
+    margin: 0rem auto;
+}
+.img-producto img{
+    width: 100%;
+    margin: 0rem auto;
+}
+.info-producto-card{
+    width: 90%;
+    margin: 0rem auto;
+    background-color: #F9FAFC;
+}
+.info-producto-card h5{
+    margin: 0.8rem 0rem 0.5rem 0rem;
+}
+.colors-productos{
+    display: flex;
+}
+.color1{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: gray;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+.color2{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #eb4a5a;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+.precio-productos{
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: end;
+}
+.email-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
+    width: 60%;
+}
+.email-contacto h3{
+    margin: 2rem auto;
+}
+.label-contacto{
+    display: flex;
+}
+.email-contacto label{
+    display: flex;
+}
+.email-contacto label p{
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.label-contacto input{
+    border-radius: 0rem;
+    border: none;
+    background-color: #F6F6F6;
+    font-size: 1.2rem;
+}
+.label-contacto button{
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 0rem;
+    font-size: 1.2rem;
+}
+/* estilos de factura de compra */
+.colorbutton{
+    background-color: #eb4a5a;
+    color: white;
+}
+.button-compra{
+    width: 100%;
+    display: flex;
+}
+.button-compra button{
+    margin: 2rem auto;
+}
+.modal-dialog{
+    width: 100%;
+}
+.modal-lg { 
+    max-width: 80% !important; 
+}
+.accordion-border-color{
+    border: white solid !important;
+}             
+.resumen-compra{
+    width: 100%;
+}     
+.re-com{
+    width: 70%;
+    margin: 2rem auto;
+}
+.info-re-com{
+    display: flex;
+    margin: 1rem 0rem;
+    justify-content: space-between;
+}
+.form-compra{
+    width: 85%;
+    margin: 0rem auto;
+}
+.buttons-compra{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons-compra button{
+    width: 25%;
+    /* padding: 0.5rem 5rem; */
+}

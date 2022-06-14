@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+.general-flex{
+    width: 100%;
+    display: flex;
+}
+
+/* container general abarca todo el contenido dentro del body */
+.container-g{
+    flex-direction: column;  
+}
+
+/* contiene el icono del carrito y el logo de academlo ubicado en la parte superior  */
+.containerMain{
+    background-color: #F6F3F3;
+}
+.containerMain img{
+    width: 100px;
+}
+.containerImg{
+    margin-top: 2.5px;
+}
+.containerIcono{
+    display: flex;
+   justify-content: flex-end;
+}
+
+/* ccontiene la imagen grande del logo de academlo con un color de fondo */
+.containerHeroImage{
+    height: auto;
+    justify-content: center;
+    background-color: #EB4A5A;
+}
+.containerHeroImage img{
+    width: 150px;
+    height: 150px;
+   margin: 15% 0;
+}
+.containertitleh2{
+    color: #434343;
+
+}
+.containerselect{
+    display: flex;
+   justify-content: flex-end;
+}
+.containerselect select{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid aliceblue;
+    color: grey;
+}
+/* contiene las opciones para filtrar los productos  */
+.containerFilter{}
+/* contiene todos los productos que se muestran en el home */
+.containerShopProduct{
+   
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#card-producto{
+    width: 150px;
+    margin-right: 5px;
+}
+.button{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.button button{
+    background-color: hsl(134, 61%, 41%);
+    border-radius: 5px ;
+    padding: 10px 15px;
+    color: #F6F3F3;
+    border: none;
+}
+/* containerAside contiene el carrito de compras  */
+.containerAside{
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.721);
+
+    position: absolute;
+    transition: 0.3s;
+    transform: translateX(-100%);
+    z-index: 5; 
+}
+.show{
+    transform: translateX(0);
+    
+}
+aside{
+    overflow: scroll;
+    height: 600px;
+}
+.productShow{
+    background-color: rgba(73, 70, 70, 0.799);
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.data{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.productShow .img-producto{
+    width: 110px;
+}
+.sumPrice{
+    margin: 10px;
+}
